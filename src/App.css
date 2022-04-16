@@ -1,0 +1,247 @@
+.logo {
+    width: 16rem;
+}
+
+.nav {
+    z-index: 9999;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.header-wrapper {
+    position: relative;
+    background: url(./wall-and-laptop-background.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info h1 {
+    color: white;
+}
+
+.typed-text {
+    color: orange;
+}
+
+.downloadCV {
+    border: 1px solid red;
+    text-decoration: none;
+    padding: .625rem;
+    margin: 2rem;
+    color: white;
+}
+
+nav {
+    z-index: 9999;
+}
+
+@media (max-width:577px) {
+    .main-info h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* About me */
+
+.photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 1px solid orange;
+    padding: .3rem;
+    object-fit: cover;
+}
+
+.about-heading {
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.t-a-j {
+    text-align: justify;
+    text-indent: 50px;
+    margin-top: 25px;
+}
+
+/* Experience stiles */
+
+.experience {
+    /* background-color: red; */
+    padding: .5rem;
+}
+
+.experience-wrapper {
+    padding: 3rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.experience h1 {
+    text-transform: uppercase;
+    color: orange;
+}
+
+.experience-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 0.12rem;
+    background: #ccd1d9;
+    height: 100%;
+    bottom: 0;
+    right: 50%;
+    /* margin-left: -0.125rem; */
+}
+
+.timeline-block {
+    display: flex;
+    
+    width: calc(50% + .5rem);
+    clear: both;
+
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+.marker {
+    width: 1rem;
+    background: #ffa500;
+    border: 1px solid #343a40;
+    height: 1rem;
+    border-radius: 50%;
+    margin-top: 1.525rem;
+    z-index: 3;
+}
+
+.timeline-content {
+    /* background-color: green; */
+    width: 95%;
+    padding: 0.9375rem;
+}
+
+/* Services */
+
+.services {
+    text-align: center;
+    background-color: rgb(231, 230, 230);
+    padding-bottom: 2rem;
+    height: 600px;
+}
+
+.services h1 {
+    text-transform: uppercase;
+}
+
+.services .container .row {
+    perspective: 1000px;
+}
+
+.box {
+    position: relative;
+    transition: all 1.9s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.box:hover {
+    transform: rotateY(180deg);
+}
+
+.services .circle {
+    position: relative;
+    margin: 0.0375rem;
+    background-color: orange;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+
+.services .circle .icon {
+    font-size: 1.4rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+}
+
+.services .box-front {
+    background: white;
+    border-bottom: .3125rem solid orange;
+    padding: .625rem;
+    margin-bottom: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 90%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.box-back {
+    background: white;
+    border-bottom: .3125rem solid orange;
+    padding: .625rem;
+    margin-bottom: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 90%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+}
+
+.box-front h2 {
+    margin-top: 1.2rem;
+}
+/* 
+.services .box-front:hover {
+    background: orange;
+    border-bottom: .3125rem solid #343a40;   
+}
+
+.services .box-front:hover .icon {
+    color: #343a40;
+}
+
+.services .box-front:hover .circle {
+    background-color: white;
+} */
